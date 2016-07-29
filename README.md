@@ -1,0 +1,2 @@
+# Android-AutoSwitchViewPager
+自动切换的Viewpager控件，可用作App首页广告轮播使用
