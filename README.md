@@ -14,5 +14,5 @@
 
 ---
 
-效果演示：
-暂无
+![image](https://github.com/lie128/Android-AutoSwitchViewPager/blob/master/preview/preview.gif)
+
