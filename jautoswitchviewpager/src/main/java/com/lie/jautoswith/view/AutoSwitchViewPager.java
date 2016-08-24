@@ -103,7 +103,7 @@ public class AutoSwitchViewPager extends FrameLayout {
         // 此页面表示页面跳转完的调用
         @Override
         public void onPageSelected(int arg0) {
-            Log.d(TAG , "item_arg0 = " + arg0);
+            Log.d(TAG, "item_arg0 = " + arg0);
             refreshIndicator(arg0);
         }
 
@@ -154,7 +154,11 @@ public class AutoSwitchViewPager extends FrameLayout {
                 @Override
                 public void onClick(View v) {
                     if (mSliderClick != null) {
-                        mSliderClick.click(position);
+                        //优化点击的图片索引
+                        if (mImageList.size() > 0) {
+                            int curPosition = position - 1;
+                            mSliderClick.click(curPosition);
+                        }
                     }
                 }
             });
