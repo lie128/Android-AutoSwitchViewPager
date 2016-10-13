@@ -177,6 +177,10 @@ public class AutoSwitchViewPager extends FrameLayout {
             return arg0 == arg1;
         }
 
+        @Override
+        public int getItemPosition(Object object) {
+            return POSITION_NONE ;
+        }
     }
 
     /**
